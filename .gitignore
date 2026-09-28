@@ -1,0 +1,23 @@
+# Secrets
+.env
+*.env
+*.key
+*.pem
+credentials*
+secrets*
+
+# Caches
+cache/
+Cache/
+.cache/
+
+# Logs
+*.log
+
+# Runtime files
+*.pid
+*.lock
+
+# OS/user-specific
+.DS_Store
+Thumbs.db
