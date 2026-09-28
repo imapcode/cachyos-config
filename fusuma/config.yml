@@ -1,0 +1,29 @@
+swipe:
+  3:
+    up:
+      command: 'swayosd-client --output-volume raise --max-volume 200'
+      threshold: 0.1
+      interval: 0.1
+    down:
+      command: 'swayosd-client --output-volume lower --max-volume 200'
+      threshold: 0.1
+      interval: 0.1
+    left:
+      command: 'playerctl previous'
+      threshold: 0.4
+      interval: 1
+    right:
+      command: 'playerctl next'
+      threshold: 0.4
+      interval: 1
+  4:
+    right:
+      command: "hyprctl dispatch 'hl.dsp.focus({ workspace = \"e+1\" })'"
+    left:
+      command: "hyprctl dispatch 'hl.dsp.focus({ workspace = \"e-1\" })'"
+
+threshold:
+  swipe: 0.4
+
+interval:
+  swipe: 1
